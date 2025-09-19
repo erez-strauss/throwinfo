@@ -1,0 +1,24 @@
+Compiler Flags (cl.exe):
+/MD or /MT: Link with the multithreaded DLL or static version of the C runtime library. /MD is common for applications that use the CRT as a DLL, while /MT links it statically.
+/O2: Optimize for speed.
+/W4: Enable level 4 warnings (recommended for robust code).
+/Zi: Generate complete debugging information.
+/std:c++[version]: Specify the C++ language standard (e.g., /std:c++17, /std:c++20).
+/EHsc: Enable C++ exception handling.
+/D_CRT_SECURE_NO_WARNINGS: (Optional) Disable C runtime security warnings if you are confident in your code and want to avoid them.
+Linker Flags (link.exe):
+/OUT:[output_filename.exe]: Specify the name of the output executable.
+/DEBUG: Include debugging information in the executable.
+Example Compilation:
+Code
+
+cl.exe /MD /O2 /W4 /Zi /std:c++17 /EHsc /D_CRT_SECURE_NO_WARNINGS your_source_file.cpp /link /OUT:your_app.exe /DEBUG
+Important Notes:
+Project Properties in Visual Studio:
+.
+If you are using Visual Studio's IDE, you can configure these settings through the project's Property Pages under "Configuration Properties" > "C/C++" and "Linker" nodes. Ensure your "Active Solution Platform" is set to "x64."
+
+
+
+
+https://compiler-explorer.com/z/3q1rPG85G

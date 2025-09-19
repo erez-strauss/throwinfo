@@ -1,0 +1,7 @@
+BasedOnStyle: Microsoft
+AccessModifierOffset: -4
+PointerAlignment: Left
+ColumnLimit:     100
+SpaceAfterCStyleCast: false
+SpaceAfterTemplateKeyword: false
+DerivePointerAlignment: false
